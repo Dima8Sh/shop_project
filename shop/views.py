@@ -9,7 +9,7 @@ class BrandViewSet(viewsets.ModelViewSet):
     serializer_class = serializers_shop.BrandsSerializer
 
 
-class CategoryViesViewSet(viewsets.ModelViewSet):
+class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = serializers_shop.CategoriesSerializer
 
