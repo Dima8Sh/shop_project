@@ -4,18 +4,18 @@ from .models import Brand, Category, Product
 from shop import serializers as serializers_shop
 
 
-class BrandViewSet(viewsets.ViewSet):
-    queryset = Brand.objects.filter().prefetch_related()
+class BrandViewSet(viewsets.ModelViewSet):
+    queryset = Brand.objects.all()
     serializer_class = serializers_shop.BrandsSerializer
 
 
-class CategoryViesViewSet(viewsets.ViewSet):
-    queryset = Category.objects.filter().prefetch_related()
+class CategoryViesViewSet(viewsets.ModelViewSet):
+    queryset = Category.objects.all()
     serializer_class = serializers_shop.CategoriesSerializer
 
 
-class ProductViewSet(viewsets.ViewSet):
-    queryset = Product.objects.filter().prefetch_related()
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
     serializer_class = serializers_shop.ProductsSerializer
 
 
