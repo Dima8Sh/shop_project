@@ -39,6 +39,14 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "factory"
+version = "1.2"
+description = "Object Oriented Currying"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "shop"
 version = "0.0.2"
 description = "Paquete para simulacion hidrologica operacional"
@@ -65,7 +73,7 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "a6919b64f43790a24716c434dee8677db9ddf534828abb26299395ac1bb6b1fa"
+content-hash = "c7c23755f3e4d5b961ac4ce1d2cabafa463d4198f34a484c42a0a43d8addcfcb"
 
 [metadata.files]
 asgiref = [
@@ -93,6 +101,9 @@ asgiref = [
 django = [
     {file = "Django-4.0.2-py3-none-any.whl", hash = "sha256:996495c58bff749232426c88726d8cd38d24c94d7c1d80835aafffa9bc52985a"},
     {file = "Django-4.0.2.tar.gz", hash = "sha256:110fb58fb12eca59e072ad59fc42d771cd642dd7a2f2416582aa9da7a8ef954a"},
+]
+factory = [
+    {file = "Factory-1.2.tar.gz", hash = "sha256:c0af96e123ac9164ca7d1b9905de749f94e819c8e85341c8fb9f1dd2e349c8cc"},
 ]
 shop = [
     {file = "SHop-0.0.2-py3-none-any.whl", hash = "sha256:ccb587d69d74ffb3b4b2de0e17313c9a327cc7ddd10101b2096b5ae51bca1166"},
