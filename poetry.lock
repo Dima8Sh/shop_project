@@ -39,12 +39,15 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
-name = "factory"
-version = "1.2"
-description = "Object Oriented Currying"
+name = "django-extensions"
+version = "3.1.5"
+description = "Extensions for Django"
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">=3.6"
+
+[package.dependencies]
+Django = ">=2.2"
 
 [[package]]
 name = "shop"
@@ -73,7 +76,7 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "c7c23755f3e4d5b961ac4ce1d2cabafa463d4198f34a484c42a0a43d8addcfcb"
+content-hash = "01479fef2909703c58a309327514a00b9d9395d7f59c81bc3686b18c62edf851"
 
 [metadata.files]
 asgiref = [
@@ -102,8 +105,9 @@ django = [
     {file = "Django-4.0.2-py3-none-any.whl", hash = "sha256:996495c58bff749232426c88726d8cd38d24c94d7c1d80835aafffa9bc52985a"},
     {file = "Django-4.0.2.tar.gz", hash = "sha256:110fb58fb12eca59e072ad59fc42d771cd642dd7a2f2416582aa9da7a8ef954a"},
 ]
-factory = [
-    {file = "Factory-1.2.tar.gz", hash = "sha256:c0af96e123ac9164ca7d1b9905de749f94e819c8e85341c8fb9f1dd2e349c8cc"},
+django-extensions = [
+    {file = "django-extensions-3.1.5.tar.gz", hash = "sha256:28e1e1bf49f0e00307ba574d645b0af3564c981a6dfc87209d48cb98f77d0b1a"},
+    {file = "django_extensions-3.1.5-py3-none-any.whl", hash = "sha256:9238b9e016bb0009d621e05cf56ea8ce5cce9b32e91ad2026996a7377ca28069"},
 ]
 shop = [
     {file = "SHop-0.0.2-py3-none-any.whl", hash = "sha256:ccb587d69d74ffb3b4b2de0e17313c9a327cc7ddd10101b2096b5ae51bca1166"},

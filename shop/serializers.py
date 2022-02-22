@@ -7,17 +7,17 @@ class BrandsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Brand
-        field = ["name"]
+        fields = '__all__'
 
 
 class CategoriesSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Category
-        field = ["name"]
+        fields = '__all__'
 
 
 class ProductsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        field = ["name"]
+        fields = '__all__'
