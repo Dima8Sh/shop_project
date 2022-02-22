@@ -4,13 +4,13 @@ from django.db import models
 class Category(models.Model):
     name = models.CharField(max_length=100, db_index=True)
     slug = models.SlugField(max_length=200, db_index=True)
-    count_products = models.IntegerField()
+    count_products = models.IntegerField(null=True, default=0, blank=True)
 
 
 class Brand(models.Model):
     name = models.CharField(max_length=100, db_index=True)
     slug = models.SlugField(max_length=200, db_index=True)
-    count_products = models.IntegerField()
+    count_products = models.IntegerField(null=True, default=0, blank=True)
 
 
 class Product(models.Model):
