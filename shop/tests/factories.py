@@ -9,7 +9,7 @@ class CategoryFactory(factory.django.DjangoModelFactory):
         model = Category
 
     name = factory.faker.Faker('name')
-    slug = factory.faker.Faker('slug')
+    #slug = factory.faker.Faker('slug')
 
 
 class BrandFactory(factory.django.DjangoModelFactory):

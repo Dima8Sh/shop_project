@@ -1,3 +1,4 @@
+
 from rest_framework import status
 from rest_framework.test import APITestCase
 from django.urls import reverse
@@ -34,4 +35,7 @@ class TestCategoriesApi(BaseAPITestCase):
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
         self.assertEqual(Category.objects.all().count(), 1)
 
-
+    def test_category_slug_success(self):
+        url = reverse('category-detail', args=[self.category1])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
